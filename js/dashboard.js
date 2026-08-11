@@ -7,6 +7,8 @@
    the version it fetched two minutes ago and the page looks broken. */
 
 import { createSensei, preload } from './sensei.js';
+import { cycleAudio, audioMode, musicAllowed, AUDIO_LABEL } from './blip.js';
+import { startMusic, stopMusic } from './music.js';
 
 const POLL_MS = 2000;
 
@@ -119,5 +121,17 @@ async function tick() {
 
 tick();
 setInterval(tick, POLL_MS);
+
+/* ---- the theme ---- */
+const muteBtn = document.getElementById('mute');
+muteBtn.textContent = AUDIO_LABEL[audioMode()];
+muteBtn.addEventListener('click', (e) => {
+  const m = cycleAudio();
+  e.currentTarget.textContent = AUDIO_LABEL[m];
+  if (musicAllowed()) startMusic(0.8); else stopMusic(0.6);
+});
+/* Audio cannot start before the user has touched the page. */
+const armMusic = () => { if (musicAllowed()) startMusic(); };
+document.addEventListener('pointerdown', armMusic, { once: true, passive: true });
 
 sensei.say('The dashboard is yours. Leave it open while you work — it watches your training log.');
