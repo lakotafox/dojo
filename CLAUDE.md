@@ -5,6 +5,12 @@
      writes one of these for a project of their own. Keep it honest and keep it
      short — a CLAUDE.md that rambles is a bad example of a CLAUDE.md. -->
 
+## If someone has just arrived here
+
+If the conversation is new and they have not asked for anything specific, they
+have most likely just cloned this and do not know what to do next. Do not wait
+to be asked. Tell them, in one line: run `/dojo` and sensei will start.
+
 ## What this is
 
 A teaching repo. A student works through belts in the terminal with the `/dojo`
