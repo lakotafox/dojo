@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#008080">
+<title>The Dojo — training log</title>
+<link rel="icon" href="./sensei/idle.png">
+<link rel="stylesheet" href="./css/dojo.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="dojo-sign">
+    <h1>THE DOJO</h1>
+    <p class="kanji">training log</p>
+  </div>
+
+  <section class="win w95-raised sensei-win">
+    <header class="w95-titlebar">
+      <div class="titlebar-name">
+        <span class="titlebar-ico">&#9670;</span><span id="belt-name">—</span>
+      </div>
+    </header>
+    <div class="win-body">
+      <div class="sensei-pop">
+        <img class="sensei-sprite" id="sensei-img" src="./sensei/idle.png" alt="Sensei">
+        <div class="sensei-bubble" id="sensei-bubble">
+          <div class="sensei-text" id="sensei-text"></div>
+        </div>
+      </div>
+      <p class="cmd-note" id="belt-motto"></p>
+    </div>
+  </section>
+
+  <section class="win w95-raised">
+    <header class="w95-titlebar">
+      <div class="titlebar-name"><span class="titlebar-ico">&#9632;</span><span>Belts</span></div>
+    </header>
+    <div class="win-body">
+      <div class="belt-rack" id="rack"></div>
+    </div>
+  </section>
+
+  <section class="win w95-raised">
+    <header class="w95-titlebar">
+      <div class="titlebar-name"><span class="titlebar-ico">&#9650;</span><span>Standing</span></div>
+    </header>
+    <div class="win-body">
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <section class="win w95-raised">
+    <header class="w95-titlebar">
+      <div class="titlebar-name"><span class="titlebar-ico">&#8635;</span><span>Log</span></div>
+    </header>
+    <div class="win-body">
+      <div id="log"></div>
+    </div>
+  </section>
+
+</div>
+
+<div class="taskbar">
+  <span class="start"><span class="flag" aria-hidden="true"></span>Start</span>
+  <span class="taskbar-rank" id="taskbar-rank">—</span>
+  <span class="clock" id="conn">starting…</span>
+</div>
+
+<script type="module" src="./js/dashboard.js"></script>
+</body>
+</html>
