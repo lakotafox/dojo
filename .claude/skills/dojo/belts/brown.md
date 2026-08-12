@@ -27,8 +27,14 @@ Have them say which of those would fire reliably, and why.
 
 ## Kata: brown-3 — write one
 
-They pick something they actually do repeatedly. A deploy checklist, a PR
-description format, how their tests get run.
+Use the same small project from Blue Belt. Do not send them looking for a
+problem to solve — hand them one that obviously fits:
+
+> "Make a skill that checks this site before I share it — that every page has a
+> title, that no link is broken, and that the stylesheet is actually loading."
+
+Or anything else that repeats in that project. The point is that they already
+understand the project completely, so the only new thing is the skill.
 
 Say: *"Create a skill that does X, and put it in ~/.claude/skills so I can use
 it from any project."*
