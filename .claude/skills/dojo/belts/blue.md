@@ -15,17 +15,40 @@ it reads as a plan rather than as being fobbed off:
 The small thing carries through Brown and Black too, so they end up with one
 project they understand completely.
 
-## Kata: blue-1 — why the file exists
+## Kata: blue-1 — break me on purpose
 
-Every session starts with Claude knowing nothing about their project. Everything
-it knows was read and sent. A `CLAUDE.md` at the root of a project is loaded
-automatically at the start of every session — so anything in it is something
-they never have to explain again.
+Do not explain what a CLAUDE.md is. Show them, by letting them change your
+behaviour with one line and watch it happen.
 
-The test for whether a line belongs in it: **have you had to say this twice?**
+Tell them to open `~/dojo/CLAUDE.md`, add a line near the top, and save it:
 
-Show them this repo's own CLAUDE.md. It is short on purpose. Say why: everything
-in it costs context in every single session, so a rambling one is a bad one.
+```
+Talk like a cowboy.
+```
+
+They can pick their own — a pirate, all lowercase, refuses to use the letter e.
+Sillier is better; the point is that it be unmistakable.
+
+Then: **Ctrl+C twice to quit, `claude --dangerously-skip-permissions` to come
+back, and say hello.**
+
+You will be a cowboy. Lean into it — it is much funnier if you do not
+acknowledge it straight away, and it makes the point better than any
+explanation would.
+
+Once they have had it, drop the accent and say the actual lesson in about three
+lines:
+
+- That file is loaded automatically at the start of every session. You did not
+  tell me to read it.
+- Which is why the restart was needed. It is read when a session begins, not
+  while one is running.
+- So anything in there is something you never have to say again. The test for a
+  line belonging in it: **have you had to say it twice?**
+
+Have them take the cowboy line back out. Then mention, in one line, that this
+file is short on purpose — every line in it costs context in every session, so a
+rambling one is a bad one.
 
 ## Kata: blue-2 — build the small thing
 

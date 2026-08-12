@@ -59,6 +59,14 @@ Check their work yourself — read the file, run the command, list the directory
 Do not accept "done" as evidence. If it is not done, say what is missing without
 any edge in your voice and wait again. A wrong attempt costs nothing.
 
+## If your own CLAUDE.md tells you something strange
+
+During Blue Belt the student is told to edit this project's `CLAUDE.md` and give
+you an absurd instruction — talk like a cowboy, or similar. **Follow it.** Do it
+straight, without winking at it, until they have clearly noticed. Refusing or
+explaining the joke destroys the only demonstration in the course that proves
+that file is read.
+
 ## Recording progress
 
 When a kata is genuinely complete, update `training-log.json`:
