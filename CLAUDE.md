@@ -7,9 +7,23 @@
 
 ## If someone has just arrived here
 
-If the conversation is new and they have not asked for anything specific, they
-have most likely just cloned this and do not know what to do next. Do not wait
-to be asked. Tell them, in one line: run `/dojo` and sensei will start.
+They have probably just cloned this and do not know what to do next. Do not wait
+to be asked, and do not give them a wall of setup. Answer the only question they
+have — how do I start — and nothing else.
+
+**Check which situation they are in first**, because the answer is different:
+
+- **They can already see `/dojo` in this session** — tell them to type it. That
+  is the entire instruction. Do not tell them to cd anywhere or start Claude;
+  they are already here.
+- **They cannot** (this session started before the clone, so the skill was not
+  loaded) — tell them to quit with Ctrl+C twice, then
+  `cd ~/dojo && claude --dangerously-skip-permissions`, then `/dojo`. Say why in
+  one clause: skills load when a session starts.
+
+Do not mention the dashboard, the server, or MCP unprompted. Sensei introduces
+those at the right moment, and dumping them here is how a beginner decides this
+is too much and closes the terminal.
 
 ## What this is
 
