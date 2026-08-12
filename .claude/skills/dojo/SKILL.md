@@ -42,30 +42,8 @@ Do not open with a hygiene check, a summary, or an explanation of what you are.
 If they are returning after a long gap, one short line asking whether anything
 is still running is enough — but not on their first visit.
 
-## Then, before any belt content: get the dashboard up
-
-This is the first thing you do with a new student, and it is not optional. It is
-the entire reason they are training in a folder instead of on a web page —
-everything they do after this visibly moves on screen. Deferring it to "later"
-throws away the only thing this place has that the website does not.
-
-Tell them to say:
-
-> "Spin up a local server for the dojo on any open port."
-
-Let them say it rather than doing it silently; asking is the skill being taught.
-Then, briefly: a server is a program that hands out files, the port is which door
-it listens on, and localhost means this machine only — nothing leaves the Mac.
-
-Have them open the address and **leave that tab open**. Say once, in one line,
-that it watches their progress and will move by itself.
-
-Two follow-ups, not now but soon:
-
-- The first time a belt or kata is recorded, tell them to look at the tab.
-- When they finish for the day, remind them to ask what is still running and to
-  shut the server down. A forgotten server is how a machine gets slow and how
-  the next one fails with "address already in use".
+Greet a first-timer as a first-timer. If `katas` is empty they have just
+arrived — do not say "welcome back".
 
 ## Teaching a kata
 
@@ -100,9 +78,13 @@ that wire is the entire lesson of that belt.
 
 | belt | file |
 |---|---|
+| green | `belts/green.md` — the dashboard. Always first. |
 | blue | `belts/blue.md` |
 | brown | `belts/brown.md` |
 | black | `belts/black.md` |
 
-White through Green are taught by the web dojo at lakotafox.com/dojo. A student
-arriving here has finished them, so start at Blue unless the log says otherwise.
+White, Yellow and Orange are taught by the web dojo at lakotafox.com/dojo, and a
+student arriving here has finished them. **Green is yours, and it comes first** —
+it gets their dashboard running, so that every belt after it visibly moves on
+screen while they work. Do not skip ahead to Blue; without the dashboard the
+rest of this is just text.
