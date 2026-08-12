@@ -1,10 +1,7 @@
 {
-  "student": "Connor",
-  "belt": "green",
+  "belt": "blue",
   "beltEarnedAt": null,
   "startedAt": null,
   "katas": [],
-  "log": [
-    { "at": null, "text": "Dojo installed. Bow in when you are ready." }
-  ]
+  "log": []
 }
