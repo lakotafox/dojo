@@ -2,24 +2,16 @@
 
 ## Just cloned this?
 
-**If you are already talking to Claude:** quit it first — Ctrl+C twice. It only
-notices new skills when it starts up, so a session that began before you cloned
-this cannot see the dojo yet.
+**Say this to the Claude you are already talking to:**
 
-Then, at your terminal:
+> Read ~/dojo/.claude/skills/dojo/SKILL.md and be my sensei.
 
-```
-cd ~/dojo
-claude --dangerously-skip-permissions
-```
+That is it. No restarting, no new terminal.
 
-and type:
-
-```
-/dojo
-```
-
-That is everything. Sensei explains the rest as you need it.
+<sub>Later, to pick up where you left off: start Claude in this folder and type
+`/dojo`. That is the same thing, just shorter — the slash command is a shortcut
+to that file, and it becomes available once a session starts inside this
+folder.</sub>
 
 ---
 
