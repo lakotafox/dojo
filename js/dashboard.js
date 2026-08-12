@@ -113,9 +113,14 @@ async function tick() {
       lastSerialised = text;
       render(JSON.parse(text));
     }
+    document.body.dataset.stale = 'false';
     $('#conn').textContent = 'watching training-log.json';
   } catch (err) {
-    $('#conn').textContent = 'cannot read training-log.json — is the server still running?';
+    // The last good data is still on screen and looks perfectly fine, which is
+    // how you end up telling someone their tab shows an error while they are
+    // looking at a tab that does not. Mark the whole page instead.
+    document.body.dataset.stale = 'true';
+    $('#conn').textContent = 'server stopped';
   }
 }
 
